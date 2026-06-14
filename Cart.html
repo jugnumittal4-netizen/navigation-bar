@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+
+    <div class="topnav">
+       
+        <a href="index.html">Home</a>
+        <a class="active" href="#Cart">Cart</a>
+        <a href="orders.html">Order</a>
+        <a href="contact.html">Contact</a></div>
+        <div id = "pizza">
+            
+
+        </div>
+    
+    </div>
+    <script>
+            let b = localStorage.getItem("pizze");
+        if (b > 0) {
+            
+            
+            document.getElementById("pizza").innerHTML = "Pizza: " + '<form style="display: flex; flex-direction: column; margin-top: 20px; border: 1px solid #ccc; padding: 20px; width: 85%; margin-left: 2.5%;">'
+
+                <div class ="container" >
+
+                    <img src="pizza.jpeg" alt="Background Image" style="width: 15%; height: auto; object-fit: cover; padding-left: 0px;">
+
+                        <p><strong>Pepperoni Pizza</strong></br>
+
+                        Price: ₹599
+
+                        <button style="display: block; margin-top: 10px;
+             padding: 10px 20px;
+              font-size: 16px;
+               background-color: #4CAF50;
+                color: white; border:
+                 none; border-radius: 5px;
+                  cursor: pointer; ;"
+                            onclick="alert('Pepperoni Pizza added to cart!'); pizza(); ">Add to Cart</button>
+                    </p>
+
+        </div > ' ;
+        }
+    </script>
+
+</body>
